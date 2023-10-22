@@ -27,7 +27,7 @@
     </style>
     <!-- nunito, rubik, poppins, merriweather, lato, montserrat, noto, roboto, oswald, aleo, mulish, asap, open-sans, barlow -->
 </head>
-<body class="bg-[#15191f] flex items-center justify-center min-h-screen font-barlow flex-col mx-20">
+<body class="bg-[#15191f] flex items-center justify-center min-h-screen font-barlow flex-col mx-10">
 	<section class="
     bg-gradient-to-br from-[#232832] to-[#2e3541] 
     p-10 
@@ -37,7 +37,7 @@
     before:-left-[30px] 
     before:w-[calc(100%+60px)] 
     before:h-[calc(100%+60px)] 
-    before:-z-10 
+    before:-z-30 
     before:bg-gradient-to-br 
     before:from-[#14181d] 
     before:to-[#1d242c]  
@@ -52,13 +52,23 @@
     flex-col
     shadow-[0px_7px_28px_6px_#1A1F28]
     ">
-            <svg class="absolute w-[300px] h-[300px] top-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#1D222C" d="M27.3,-54.3C33.4,-43.8,35.1,-32.5,46,-23.3C56.9,-14.1,77.1,-7.1,78.4,0.7C79.7,8.5,62,17.1,53.3,30.2C44.7,43.3,45.1,61.1,37.7,65.2C30.4,69.3,15.2,59.7,2.2,56C-10.9,52.2,-21.7,54.4,-28.9,50.1C-36.1,45.9,-39.5,35.4,-44.8,25.9C-50.1,16.5,-57.3,8.3,-59,-1C-60.7,-10.2,-57,-20.5,-49.4,-25.9C-41.7,-31.3,-30.2,-31.8,-21.3,-40.8C-12.5,-49.7,-6.2,-67.1,2.2,-70.9C10.6,-74.6,21.2,-64.8,27.3,-54.3Z" transform="translate(100 100)" />
+            <svg class="absolute fade-in-bl w-[300px] h-[300px] top-0 -ml-8 drop-shadow-[-30px_30px_50px_rgba(255,84,0,0.48)]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#1D222C" d="M50.9,-59.6C65.9,-59.2,77.8,-44.2,75.2,-29.7C72.7,-15.2,55.7,-1.3,48.6,14.4C41.6,30.1,44.4,47.6,38,52.2C31.5,56.9,15.8,48.6,-0.5,49.4C-16.9,50.2,-33.7,59.9,-45.1,56.9C-56.4,53.8,-62.3,38,-58.7,24.8C-55.1,11.6,-42,1.1,-36.4,-10.5C-30.8,-22.1,-32.7,-34.8,-27.9,-38.5C-23,-42.1,-11.5,-36.7,3.2,-41.1C18,-45.6,36,-59.9,50.9,-59.6Z" transform="translate(100 100)" />
             </svg>
-              
+        <img src="https://neluttu.github.io/promo-section/rocket_2256109.png" class="z-20 w-[120px] my-12" id="rocket">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var rocketElement = document.getElementById("rocket");
+                rocketElement.classList.add("slide-in-blurred-bl");
+                setTimeout(function() {
+                    rocketElement.classList.remove("slide-in-blurred-bl");
+                    rocketElement.classList.add("vibrate-1");
+                }, 300);
+            });
+        </script>
         <h1 class="text-3xl font-semibold my-7">Ready to start?</h1>
         <p class="w-full text-xl font-medium text-center md:w-1/2">
-            Start learning Read and Swift with<br> zero coding experience.
+            Start learning React and Swift with<br> zero coding experience.
         </p>
         <button class="px-8 py-4 text-lg transition-all duration-150 ease-in hover:bg-[#5c9cef] hover:text-white group text-[#15191f] font-bold mt-10 bg-white rounded-full">Get <span class="text-[#ef5363] transition-all duration-150 ease-in group-hover:text-[#fbcf53]">PRO</span> for 50%</button>
         <div class="p-8 text-[#dbe1e6] text-center bg-[#1d222c] mt-16">
